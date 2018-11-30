@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray_bg"
+        tools:context=".activity.AllBookActivity">
+
+    <include
+    layout="@layout/item_title"
+    ></include>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="60dp"
+                 android:background="@color/white"
+                 android:padding="10dp"
+    >
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                    android:background="@drawable/searchcontentshape"
+                    android:layout_marginRight="90dp">
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:hint="请输入商品关键字"
+                              android:textSize="15dp"
+                              android:layout_gravity="center"
+                              android:background="@null"
+                              android:lines="1"
+                              android:layout_marginRight="26dp"
+                    />
+                    <ImageView android:layout_width="24dp"
+                               android:layout_height="24dp"
+                               android:background="@drawable/ic_search"
+                    android:layout_gravity="right|center"
+                               android:layout_marginRight="10dp"
+                    />
+        </FrameLayout>
+
+        <TextView android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+        android:background="@drawable/searchbtnshape"
+                  android:textColor="@color/red"
+                  android:text="搜索"
+                  android:gravity="center"
+        />
+
+
+
+    </FrameLayout>
+
+
+    <ListView
+            android:id="@+id/lv_itembooktype"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:divider="@color/white"
+    ></ListView>
+
+    <android.support.v4.widget.SwipeRefreshLayout android:layout_width="match_parent"
+                                                  android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView android:layout_width="match_parent"
+                                                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</LinearLayout>
