@@ -2,6 +2,9 @@ package com.example.administrator.myfirstkotlinproject.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.res.ColorStateList
+import android.os.Build
+import android.support.annotation.RequiresApi
 import android.transition.Visibility
 import android.view.View
 import android.view.ViewGroup
@@ -12,6 +15,7 @@ import java.text.FieldPosition
 class ItemBookTypeAdapter(val contentlist:List<String>,val context:Context):BaseAdapter()
 {
     var tag:Int = 0;
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
 
         var viewholder:ViewHolder_itembooktype ?= null ;
@@ -33,10 +37,10 @@ class ItemBookTypeAdapter(val contentlist:List<String>,val context:Context):Base
             viewholder.line.visibility = View.VISIBLE;
         }
 
+        //var colorStateList:ColorStateList = arrayListOf<ColorStateList>(context.getColorStateList(R.color.red))
         var textitemset = contentlist[p0];
         viewholder.item_text.text = textitemset;
-
-
+        //viewholder.item_text.textColors(colorStateList)
 
         return view;
 

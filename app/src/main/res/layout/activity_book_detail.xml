@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg"
+        android:orientation="vertical">
+
+    <include
+    layout="@layout/item_title"
+    ></include>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+        >
+            <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/white"
+                         android:paddingTop="10dp"
+                         android:paddingBottom="10dp"
+                         android:paddingLeft="15dp"
+                         android:paddingRight="15dp">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              >
+                    <TextView
+                            android:id="@+id/xt_bookname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="冬令营|跟大师学画画"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                    />
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="￥2560.00"
+                                android:textColor="@color/red"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="积分可底100%"
+                                android:textColor="@color/red"
+                                android:textSize="12dp"
+                                android:background="@drawable/searchbtnshape"
+                                android:layout_marginLeft="20dp"
+                                android:padding="2dp"
+
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="10dp"
+                                  android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="剩余：  8"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="12dp"
+                                android:layout_weight="1"
+
+                        />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="销量：  8笔"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="12dp"
+                                android:layout_weight="1"
+
+                        />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="快递包邮"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="12dp"
+                                android:layout_weight="1"
+
+                        />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="right|center"
+                >
+                    <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="23dp"
+                    android:background="@drawable/ic_twocode"
+                    android:layout_gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                    android:text="推广码"
+                    android:textSize="12dp"
+                    android:textColor="@color/gray_dark"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="5dp"></View>
+
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/white"
+                         android:layout_marginTop="5dp"
+                         android:padding="5dp">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="选择：1月21-1月15"
+                          android:textColor="@color/black"
+                          android:textSize="15dp"
+                          android:layout_marginLeft="5dp"
+                />
+                <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="12dp"
+                android:background="@drawable/ic_rightarrow"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="5dp"
+                />
+            </FrameLayout>
+
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/white"
+                         android:layout_marginTop="5dp"
+                         android:padding="10dp">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="商品评价（0）"
+                          android:textColor="@color/black"
+                          android:textSize="15dp"
+                          android:layout_marginLeft="5dp"
+                />
+
+            </FrameLayout>
+
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/white"
+                         android:layout_marginTop="5dp"
+                         android:padding="10dp">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="商品详情"
+                          android:textColor="@color/black"
+                          android:textSize="15dp"
+                          android:layout_marginLeft="5dp"
+                />
+
+            </FrameLayout>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textSize="15dp"
+                      android:textColor="@color/black"
+                      android:layout_margin="15dp"
+                      android:text="等到日落时，我会在这里拍好多张照片，背景里有鸽子飞翔的身影，有落日的余晖，有红砖绿瓦的落寞孤寂，有灯火辉煌时的灿烂。"
+            />
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="200dp"
+                        android:background="@drawable/ic_bookdetail"
+                       android:layout_margin="15dp"
+            />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

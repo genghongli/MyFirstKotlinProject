@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/gray_bg"
+        android:layout_margin="5dp"
+>
+
+    <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+        <ImageView android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:background="@drawable/bg"
+                   android:id="@+id/item_image"
+        />
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+
+        >
+            <TextView
+                    android:id="@+id/xt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="冬令营|跟大师学画画"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+
+            />
+
+            <TextView
+                    android:id="@+id/xt_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥2650.00"
+                    android:textSize="15dp"
+                    android:textColor="@color/red"
+                    android:layout_gravity="bottom"
+            />
+
+            <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/ic_shopcar"
+                    android:layout_gravity="bottom|right"
+            />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</FrameLayout>
