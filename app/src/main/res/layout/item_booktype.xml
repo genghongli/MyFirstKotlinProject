@@ -13,12 +13,12 @@
               android:id="@+id/item_text"
               android:layout_gravity="center"
               android:gravity="center"
-              android:background="@drawable/ovalshape"
+              android:background="@drawable/ovalshape_unselect"
               android:paddingLeft="20dp"
               android:paddingRight="20dp"
               android:paddingTop="5dp"
               android:paddingBottom="5dp"
-              android:textColor="@color/green"
+              android:textColor="@color/gray_dark"
     />
 
 

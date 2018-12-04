@@ -67,6 +67,16 @@ class HomeFragment: Fragment()
 
         }
 
+        gv_booktype.setOnItemClickListener { adapterView, view, i, l ->
+
+            bookTypeAdapter.updateadapter(i,view);
+
+        }
+
+//        viewpage.setOnPageChangeListener(
+//
+//        )
+
 
 
 
@@ -75,5 +85,7 @@ class HomeFragment: Fragment()
 
 
 }
+
+
 
 

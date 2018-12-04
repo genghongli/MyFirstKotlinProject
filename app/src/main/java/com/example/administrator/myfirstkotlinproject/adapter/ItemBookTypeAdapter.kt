@@ -6,6 +6,7 @@ import android.content.res.ColorStateList
 import android.os.Build
 import android.support.annotation.RequiresApi
 import android.transition.Visibility
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
@@ -60,27 +61,23 @@ class ItemBookTypeAdapter(val contentlist:List<String>,val context:Context):Base
 
     fun updateadapter(position: Int, listView: ListView)
     {
-        /*int visiblePosition = listview.getFirstVisiblePosition();
-        //得到指定位置的视图，对listview的缓存机制不清楚的可以去了解下
-        View view = listview.getChildAt(index - visiblePosition);
-        ViewHolder holder = (ViewHolder) view.getTag();
-        holder.tv2 = (TextView) view.findViewById(R.id.tv2);*/
+        var viewCount = listView.count-1;
+        for (i in 0..viewCount)
+        {
 
-        //tag = position;
-        var oldview = listView.getChildAt(tag);
-        var holder_old = oldview.tag as ViewHolder_itembooktype;
-        holder_old.line.visibility = View.GONE;
+            var view = listView.getChildAt(i);
+            var holder = view.tag as ViewHolder_itembooktype;
+            if(i == position)
+            {
+                holder.line.visibility = View.VISIBLE;
+            }
+            else
+            {
+                holder.line.visibility = View.GONE;
+            }
+        }
 
-        var visiblePosition = listView.firstVisiblePosition;
-        var view = listView.getChildAt(position - visiblePosition);
-        var holder = view.tag as ViewHolder_itembooktype;
-        holder.line.visibility = View.VISIBLE;
-        tag = position;
-//        holder.item_text?.textColors(context.getColor(R.color.red));
     }
-
-
-
 }
 
 
