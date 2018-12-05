@@ -52,8 +52,9 @@
             />
 
             <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
+                    android:id="@+id/shopcar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:background="@drawable/ic_shopcar"
                     android:layout_gravity="bottom|right"
             />

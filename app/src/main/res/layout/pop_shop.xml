@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+                  android:layout_gravity="bottom"
+    >
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="110dp">
+
+
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+
+            >
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:gravity="center_vertical"
+                              android:layout_marginLeft="120dp"
+
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="艺术视野课/10-12岁"
+                              android:textSize="15dp"
+                              android:textColor="@color/black"
+                              android:id="@+id/xt_bookname"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="￥5200"
+                              android:textSize="18dp"
+                              android:textColor="@color/red"
+                              android:layout_marginTop="10dp"
+                              android:textStyle="bold"
+                    />
+
+                </LinearLayout>
+
+                <ImageView android:layout_width="16dp"
+                           android:layout_height="16dp"
+                           android:background="@drawable/ic_close"
+                           android:layout_gravity="right"
+                           android:id="@+id/img_close"
+                />
+
+
+            </FrameLayout>
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg"
+                    android:layout_marginLeft="10dp"
+            />
+
+        </FrameLayout>
+
+
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/gray_dark"
+        ></View>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="艺术视野"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+
+        />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:paddingTop="10dp"
+                      android:paddingBottom="10dp"
+        >
+            <TextView android:layout_width="80dp"
+                      android:layout_height="40dp"
+                      android:background="@drawable/redshape"
+                      android:text="20课时"
+                      android:gravity="center"
+                      android:layout_marginLeft="20dp"
+                      android:id="@+id/xt_20"
+                      android:textColor="@color/white"
+            />
+
+            <TextView android:layout_width="80dp"
+                      android:layout_height="40dp"
+                      android:background="@drawable/searchcontentshape"
+                      android:text="40课时"
+                      android:gravity="center"
+                      android:layout_marginLeft="20dp"
+                      android:id="@+id/xt_40"
+                      android:textColor="@color/black"
+            />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/gray_dark"
+        ></View>
+
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@color/white"
+                     android:padding="15dp"
+        >
+            <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="购买数量"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"
+
+
+            />
+
+            <TextView android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:background="@drawable/grayrectshape"
+                      android:text="—"
+                      android:gravity="center"
+                      android:layout_marginLeft="120dp"
+                      android:id="@+id/xt_cut"
+            />
+            <TextView android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:background="@drawable/grayrectshape"
+                      android:text="0"
+                      android:gravity="center"
+                      android:layout_marginLeft="150dp"
+                      android:layout_gravity="center_vertical"
+                      android:id="@+id/xt_result"
+            />
+            <TextView android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:background="@drawable/grayrectshape"
+                      android:text="+"
+                      android:gravity="center"
+                      android:layout_marginLeft="180dp"
+                      android:layout_gravity="center_vertical"
+                      android:id="@+id/xt_add"
+            />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="剩余：50件"
+                      android:gravity="center"
+                      android:layout_gravity="right|center_vertical"
+                      android:textColor="@color/red"
+                      android:textSize="18dp"
+
+            />
+
+        </FrameLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="45dp"
+                      android:orientation="horizontal"
+        >
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:background="@color/green"
+                      android:text="加入购物车"
+                      android:gravity="center"
+                      android:textSize="15dp"
+                      android:textColor="@color/white"
+            />
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:background="@color/red"
+                      android:text="立即购买"
+                      android:gravity="center"
+                      android:textSize="15dp"
+                      android:textColor="@color/white"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

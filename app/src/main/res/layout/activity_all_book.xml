@@ -7,7 +7,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/gray_bg"
-        tools:context=".activity.AllBookActivity">
+        tools:context=".activity.AllBookActivity"
+        android:id="@+id/ll_container"
+
+        >
 
     <include
     layout="@layout/item_title"

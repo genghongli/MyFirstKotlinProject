@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.administrator.myfirstkotlinproject.R
 
-class ContentAdapter(val imagelist:List<Int>, val contentlist:List<String>,val context:Context):BaseAdapter()
+class ContentAdapter(val imagelist:ArrayList<Int>, val contentlist:List<String>,val context:Context):BaseAdapter()
 {
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
 

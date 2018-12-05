@@ -21,7 +21,7 @@ import com.example.administrator.myfirstkotlinproject.adapter.ViewPageAdapter
 import com.example.administrator.myfirstkotlinproject.weiget.MyGridView
 import kotlinx.android.synthetic.main.fragment_home.*
 
-class HomeFragment: Fragment()
+class HomeFragment: Fragment(), ViewPager.OnPageChangeListener
 {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
          super.onCreateView(inflater, container, savedInstanceState)
@@ -32,8 +32,6 @@ class HomeFragment: Fragment()
         val gridview = view.findViewById<MyGridView>(R.id.gridview) as GridView;
         val gv_booktype = view.findViewById<GridView>(R.id.gv_booktype) as GridView;
 
-        /*val text = view.findViewById<TextView>(R.id.text) as TextView;
-        text.text="哈哈";*/
 
 
         //列表
@@ -73,18 +71,40 @@ class HomeFragment: Fragment()
 
         }
 
-//        viewpage.setOnPageChangeListener(
-//
-//        )
+        // 第一种
+        viewpage.addOnPageChangeListener(object : ViewPager.OnPageChangeListener{
+            override fun onPageScrollStateChanged(state: Int) {
+            }
 
+            override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+            }
 
+            override fun onPageSelected(position: Int) {
+            }
+
+        })
 
 
         return view;
     }
 
+    // 第二种
+    override fun onPageScrollStateChanged(state: Int) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
+    override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onPageSelected(position: Int) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 }
+
+/*private fun ViewPager.addOnPageChangeListener() {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+}*/
 
 
 
